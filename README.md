@@ -4,7 +4,7 @@
 
 1.Data fold: This folder contains the original data set for our project "BodyFat.csv".
 
-2.Code fold: This folder contains all the R code for our analysis. (for running our code, you should install "ggplot2" "GGally" "glmnet" and "DAAG" these packages.
+2.Code fold: This folder contains all the R code for our analysis. (for running our code, you should install "ggplot2" "glmnet" and "DAAG" these packages.
 
 3.Image fold: This folder contains all figures we use.
 
