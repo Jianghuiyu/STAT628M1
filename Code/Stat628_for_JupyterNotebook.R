@@ -1,7 +1,6 @@
 require("ggplot2")
 require("glmnet")
 require("DAAG")
-#install.packages('GGally', repos='http://cran.us.r-project.org')
 #install.packages('glmnet', repos='http://cran.us.r-project.org')
 data_body<-read.csv("BodyFat.csv")
 density=data_body$DENSITY
@@ -77,6 +76,7 @@ alpha = 0.5
 lm = glmnet(x = as.matrix(data_body[,2:15]),y = data_body[,1],alpha = alpha,standardize = F)
 plot(lm)
 
+lm1 = lm(BODYFAT~WEIGHT+ABDOMEN+WRIST,data_body)
 ## Diagnostic and Prediction
 ggplot(lm1, aes(.fitted, .resid)) +
   geom_point() +
